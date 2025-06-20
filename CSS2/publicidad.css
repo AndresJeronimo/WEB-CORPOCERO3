@@ -1,0 +1,246 @@
+* {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #004b23;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav > div {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+
+
+    /* nav button{
+      background-color: #004b23;
+      color: #ddd;
+      padding: 0px;
+      border: 0px;
+      width: 40px;
+      height: 40px;
+    }
+
+    nav button:hover{
+      background-color: #63c132;
+      color: white;
+      padding: 0px;
+      border: 0px;
+      width: 40px;
+      height: 40px;
+    } */
+
+    .menuServicios .desplegable {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+      flex-direction: column;
+      animation: slideDown 0.3s ease forwards;
+      z-index: 10;
+      min-width: 180px;
+    }
+
+    .menuServicios:hover .desplegable {
+      display: flex;
+    }
+
+    .menuServicios .desplegable div {
+      padding: 10px;
+      transition: background-color 0.2s;
+      color: #333;
+    }
+
+    .menuServicios .desplegable div:hover {
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    .contenedorBusqueda input {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .contenedorBusqueda label {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .apoyanos {
+      background-color: #63c132;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .apoyanos:hover {
+      background-color: #529e29;
+      color: white;
+    }
+
+    .seccionTitulo {
+      text-align: center;
+      padding: 30px 0 10px 0;
+      font-size: 20px;
+    }
+
+    .seccionPublicidades {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: #dcdcdc;
+      gap: 40px;
+    }
+
+    .columna-publicidad {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      flex: 1;
+    }
+
+    .publicidad-item {
+      animation: aparecer 1.2s ease forwards;
+    }
+
+    @keyframes aparecer {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .circulo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .circulo:hover {
+      transform: scale(1.05) rotate(3deg);
+    }
+
+    .circulo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .etiqueta {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .seccionApoyanos {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: white;
+    }
+
+    .seccionApoyanos p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .btnApoyanos {
+      background-color: #e0e0e0;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btnApoyanos:hover {
+      background-color: #ccc;
+    }
+
+    footer {
+      background-color: #ddd;
+      padding: 20px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .iconosSociales {
+      margin-top: 10px;
+      font-size: 22px;
+    }
+
+    .iconosSociales a {
+      margin: 0 10px;
+      color: #004b23;
+      transition: color 0.3s ease;
+    }
+
+    .iconosSociales a:hover {
+      color: #63c132;
+    }
+
+    /* .logoPie {
+      
+      width: 80px;
+      height: 80px;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    } */
+
+    @media (max-width: 768px) {
+      .seccionPublicidades {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .circulo {
+        width: 90vw;
+        height: 90vw;
+      }
+    }

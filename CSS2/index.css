@@ -1,0 +1,235 @@
+
+/* ---------- CONFIGURACIÓN GLOBAL ---------- */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* ---------- HEADER Y NAVEGACIÓN ---------- */
+header {
+  background-color: #004b23;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav > div {
+  position: relative;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menuServicios .desplegable {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  flex-direction: column;
+  animation: slideDown 0.3s ease forwards;
+  z-index: 10;
+  min-width: 180px;
+}
+
+.menuServicios:hover .desplegable {
+  display: flex;
+}
+
+.menuServicios .desplegable a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menuServicios .desplegable div {
+  padding: 10px;
+  transition: background-color 0.2s;
+}
+
+.menuServicios .desplegable div:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.contenedorBusqueda input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.lupa{
+  background-color: #f0f0f0;
+  padding: 1px, 6px;
+  color: black;
+  height: 20px;
+}
+
+.apoyanos {
+  background-color: #63c132;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+/* ---------- SECCIÓN PRINCIPAL ---------- */
+.principal {
+  padding: 70px;
+  padding-left: 150px;
+  padding-bottom: 0;
+  background-color: #ddd;
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carruselImagenes {
+  width:300px;
+  height: 300px;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carruselImagenes img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  border-radius: 0;
+}
+
+.textoBienvenida {
+  flex: 1;
+  max-width: 600px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  margin: 0 auto;       /* Centra el bloque en el contenedor */
+}
+
+.textoBienvenida h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.textoBienvenida p {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center; /* Centra el texto si también lo quieres centrado visualmente */
+}
+/* ---------- SECCIÓN SERVICIOS ---------- */
+.seccionServicios {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.cartasServicios {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.carta {
+  background-color: #004b23;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+}
+
+.carta:hover {
+  transform: translateY(-5px);
+}
+
+.carta span {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+  color: #cccc66;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #ddd;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.iconosSociales {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.iconosSociales a {
+  margin: 0 10px;
+  color: #004b23;
+  transition: color 0.2s;
+}
+
+.iconosSociales a:hover {
+  color: #63c132;
+}
+
+footer img {
+  margin-top: 15px;
+  width: 80px;
+}
+
+/* ---------- ANIMACIONES ---------- */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a{
+  text-decoration: none;
+}

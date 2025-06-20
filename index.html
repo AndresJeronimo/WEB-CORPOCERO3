@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Corpocero</title>
+  
+  <!-- RUTA RELATIVA CORRECTA -->
+  <link rel="stylesheet" href="CSS2/index.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <!-- RUTAS SIN SLASH INICIAL -->
+  <script defer src="JS/index.js"></script>
+  <script defer src="JS/buscador.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <!-- RUTA SIN SLASH INICIAL -->
+      <a href="index.html"><img src="Imagenes/Logo.png" alt="Logo Corpocero" style="height: 40px;" /></a>
+    </div>
+    <nav>
+      <a href="index.html"><button>INICIO</button></a>
+
+      <div class="menuServicios">
+        <button>SERVICIOS ▾</button>
+        <div class="desplegable">
+          <a href="publicidad.html"><div>Venta de publicidad</div></a>
+          <a href="prestacionesServicios.html"><div>Prestaciones</div></a>
+          <a href="otrosServicios.html"><div>Otros servicios</div></a>
+          <a href="nuestrasObras.html"><div>Nuestras obras</div></a>
+        </div>
+      </div>
+
+      <a href="sobreNosotros.html"><button>SOBRE NOSOTROS</button></a>
+
+      <div class="contenedorBusqueda">
+        <input type="text" id="busqueda" placeholder="Buscar..." />
+        <button class="lupa" onclick="buscar()"><i class="bi bi-search"></i></button>
+      </div>
+    </nav>
+
+    <a href="btnApoyanos.html"><button class="apoyanos">APÓYANOS</button></a>
+  </header>
+
+  <div class="principal">
+    <div class="carruselImagenes">
+      <!-- RUTAS CORREGIDAS -->
+      <img class="slide-img" src="Imagenes/imgPrincipal.png" alt="Imagen 1">
+      <img class="slide-img" src="Imagenes/img2.png" alt="Imagen 2" style="display: none;">
+      <img class="slide-img" src="Imagenes/img3.png" alt="Imagen 3" style="display: none;">
+    </div>
+
+    <div class="textoBienvenida">
+      <h2 class="texto_1">¡BIENVENIDOS A CORPOCERO!</h2>
+      <p class="texto_2">
+        Somos una Corporación Sin Ánimo de Lucro con más de 30 años de trayectoria dedicada a preservar el medio ambiente público y a cuidar los espacios urbanos de nuestra querida ciudad de Cúcuta. <br><br>
+        Administramos con orgullo la avenida más importante de la ciudad, y cada día nos comprometemos con una Cúcuta más verde, limpia, ordenada y culta. <br><br>
+        Nuestro trabajo es por ti, por tus hijos y por el futuro de todos. Pero necesitamos tu apoyo. El espacio público te pertenece, y juntos podemos conservarlo y mejorarlo. <br><br>
+        💚 Afíliate y sé parte del cambio. ¡Gracias por creer en una ciudad más consciente y sostenible!
+      </p>
+    </div>
+  </div>
+
+  <section class="seccionServicios">
+    <h2>ALGUNOS SERVICIOS QUE MANEJAMOS</h2>
+    <div class="cartasServicios">
+      <a href="publicidad.html">
+        <div class="carta">
+          <span>SERVICIOS ESPECIALIZADOS</span>
+          <strong>“PUBLICIDAD EN <br> MOBILIARIO URBANO”</strong>
+        </div>
+      </a>
+
+      <a href="otrosServicios.html">
+        <div class="carta">
+          <span>SERVICIOS ESPECIALIZADOS</span>
+          <strong>“DISEÑO Y <br> RECUPERACIÓN <br> DEL ESPACIO PÚBLICO”</strong>
+        </div>
+      </a>
+      
+      <a href="prestacionesServicios.html">
+        <div class="carta">
+          <span>SERVICIOS ESPECIALIZADOS</span>
+          <strong>“MANTENIMIENTO DEL <br> ESPACIO PÚBLICO”</strong>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Régimen Tributario Especial</p>
+    <p>
+      Calle 15 No 12-40 Oficina 203 Edificio Morales<br>
+      Barrio Caobos, Cúcuta<br>
+      Teléfono: (+57) 318 213 5737<br>
+      Email: corpocero@gmail.com
+    </p>
+    <div class="iconosSociales">
+      <a href="https://www.facebook.com/CorpoceroCucuta1" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/corpocero/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.youtube.com/c/corpoceroc%C3%BAcuta" target="_blank"><i class="bi bi-youtube"></i></a>
+      <a href="https://x.com/corpocero" target="_blank"><i class="bi bi-twitter-x"></i></a>
+    </div>
+
+    <!-- RUTA CORREGIDA -->
+    <a href="index.html"><img src="Imagenes/logo_Negro.png" alt="Logo Corpocero" style="width: 80px;" /></a>
+  </footer>
+
+</body>
+</html>
